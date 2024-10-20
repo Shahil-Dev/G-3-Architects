@@ -1,0 +1,145 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.display-flex {
+    display: flex;
+}
+.item {
+    list-style: none;
+    margin-right: 30px;
+}
+.link {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+}
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.G3 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.light-bg {
+    background: rgba(255, 144, 14, 0.1);
+}
+.navbar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-contain {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.bg-img{
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.new {
+    font-weight: 700;
+    font-size: 4rem;
+}
+button {
+    padding: 10px 20px;
+    background-color: #ff900e;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff750e;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .G3 {
+        font-size: 2.5rem;
+    }
+    .new {
+        font-size: 3.5rem;
+    }
+    .bg-img{
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .G3 {
+        font-size: 2rem;
+    }
+    .new {
+        font-size: 3rem;
+    }
+    .banner-contain {
+        max-width: 650px;
+    }
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .bg-img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .G3 {
+        font-size: 1.8rem;
+    }
+    .new {
+        font-size: 2.5rem;
+    }
+    .banner-contain {
+        padding: 20px;
+    }
+    .bg-img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .G3 {
+        font-size: 1.5rem;
+    }
+    .new {
+        font-size: 2rem;
+    }
+    .banner img {
+        width: 80%;
+        height: auto;
+    }
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-items {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
