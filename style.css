@@ -1,10 +1,10 @@
-/*Font*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Base styles */
 body {
     font-family: "Work Sans", sans-serif;
     margin: 0;
     padding: 0;
 }
+
 .display-flex {
     display: flex;
 }
@@ -39,7 +39,7 @@ body {
     margin: 0 auto;
     margin-bottom: 50px;
 }
-.bg-img{
+.bg-img {
     width: 80%;
     height: auto;
     max-width: 100%;
@@ -61,6 +61,31 @@ button {
 button:hover {
     background-color: #ff750e;
 }
+.menu-toggle {
+    display: none;
+}
+.faat {
+    width: 200px;
+    height: 200px;
+}
+.ddt {
+    gap: 5px;
+}
+.sec-div {
+    gap: 50px;
+}
+.quick {
+    margin-top: 80px;
+}
+.features {
+    font-size: 3rem;
+   
+}
+.many {
+    color: #727272;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
@@ -70,9 +95,13 @@ button:hover {
     .new {
         font-size: 3.5rem;
     }
-    .bg-img{
+    .bg-img {
         max-width: 80%;
     }
+    .menu-toggle {
+        display: none;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -86,16 +115,21 @@ button:hover {
         max-width: 650px;
     }
     .nav-items {
-        flex-direction: column;
+        flex-direction:row;
         align-items: center;
+        gap: 20px;
+         /* Initially hidden for smaller screens */
     }
     .item {
         margin-right: 0;
         margin-bottom: 15px;
     }
-    .bg-img{
+    .bg-img {
         width: 80%;
         height: auto;
+    }
+    .menu-toggle {
+        display: none;
     }
 }
 
@@ -106,12 +140,25 @@ button:hover {
     .new {
         font-size: 2.5rem;
     }
+    .quick{
+        margin-top: 0px;
+    }
+    .many{
+        margin-top: 0px;
+        bottom: 1px;
+    }
     .banner-contain {
         padding: 20px;
     }
-    .bg-img{
+    .bg-img {
         width: 80%;
         height: auto;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .features {
+        margin-top: 7px;
     }
 }
 
@@ -122,17 +169,33 @@ button:hover {
     .new {
         font-size: 2rem;
     }
-    .banner img {
-        width: 80%;
-        height: auto;
-    }
     .navbar {
         flex-direction: column;
         text-align: center;
     }
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
     .nav-items {
         flex-direction: column;
         padding: 10px 0;
+    }
+    .ddt{
+        display: block;
+    }
+    .faat{
+        width: 80%;
+        
+
+    }
+    .sec-div{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
     }
     .item {
         margin-right: 0;
@@ -142,4 +205,9 @@ button:hover {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+}
+
+/* Show the menu when toggle is clicked */
+.nav-active {
+    display: flex !important;
 }

@@ -10,6 +10,7 @@
     <header class="light-bg">
         <nav class="navbar light-bg display-flex">
             <h1 class="G3">G3 Architects</h1>
+            <button class="menu-toggle">☰</button> <!-- Hamburger button -->
             <ul class="display-flex nav-items">
                 <li class="item"><a class="link" href="#">Home </a></li>
                 <li class="item"><a class="link" href="#">About</a></li>
@@ -20,16 +21,36 @@
         <div class="banner">
             <div class="banner-contain">
                 <h1 class="new">Brand New <br> Group of Architects</h1> 
-                <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or words which don't look even.
-                </p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or words which don't look even.</p>
                 <button>Explore More</button>
             </div>
             <img class="bg-img" src="./Images/banner.png" alt="Architects Banner">
             <br><br><br>
         </div>
     </header>
-    <main></main>
+    <main style="max-width: 850px; margin: 0 auto;">
+        <br><br><br><br>
+        <div class="display-flex sec-div">
+            <section class="display-flex ddt">
+               <div>
+                   <img class="faat" src="./Images/team1.png" alt="">
+                   <img class="faat" src="./Images/team2.png" alt="">
+               </div>
+               <br><br>
+               <div>
+                   <img class="faat" src="./Images/team3.png" alt="">
+                   <img class="faat" src="./Images/team4.png" alt="">
+               </div>
+            </section>
+            <section class="quick">
+                <h1 class="features"><span style="color: #727272;">Quick list</span> of Our <br><span style="color: #FF900E;">Features</span></h1>
+                <p class="many">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or words which don't look even.</p>
+                <button>Explore More</button>
+            </section>
+        </div>
+       
+    </main>
     <footer></footer>
+    <script src="index.js"></script> <!-- Link JavaScript for toggle functionality -->
 </body>
 </html>
