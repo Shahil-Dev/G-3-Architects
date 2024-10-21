@@ -86,7 +86,57 @@ button:hover {
     font-size: 18px;
     line-height: 1.5rem;
 }
-
+.love{
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: center;
+}
+.are{
+    width: 40%;
+}
+.girl-img{
+    width: 500px;
+    height: 1050px;
+    margin-top: 29px;
+}
+.lorem{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.mobile{
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 15px;   
+}
+.laap{
+    color: rgb(19, 19, 19);
+   font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.may{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.enjoy{
+    color: rgb(19, 19, 19);
+    font-size: 35px;
+    font-weight: 600;
+     text-align: left;
+     border-left: 3px solid  rgb(255, 144, 14);
+     padding-left: 10px;
+}
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .G3 {
@@ -101,7 +151,17 @@ button:hover {
     .menu-toggle {
         display: none;
     }
-
+    .love{
+        display: block;
+        height: auto;
+    }
+    .are{
+        width: 100%;
+        text-align: center;
+    }
+    .girl-img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -130,6 +190,13 @@ button:hover {
     }
     .menu-toggle {
         display: none;
+    }
+    .are{
+        width: 100%;
+        text-align: center;
+    }
+    .girl-img{
+        width: 100%;
     }
 }
 
@@ -160,6 +227,13 @@ button:hover {
     .features {
         margin-top: 7px;
     }
+    .are{
+        width: 100%;
+        text-align: center;
+    }
+    .girl-img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -189,8 +263,6 @@ button:hover {
     }
     .faat{
         width: 80%;
-        
-
     }
     .sec-div{
     display: block;
@@ -205,9 +277,22 @@ button:hover {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+    .are{
+        width: 100%;
+        text-align: center;
+    }
+    .girl-img{
+        width: 100%;
+    }
+    .enjoy{
+        margin-left: 20px;
+    }
+    .lorem{
+        margin-left: 20px;
+    }
 }
 
 /* Show the menu when toggle is clicked */
-.nav-active {
-    display: flex !important;
+.nav-active{
+    display: flex ;
 }
