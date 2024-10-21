@@ -137,6 +137,63 @@ button:hover {
      border-left: 3px solid  rgb(255, 144, 14);
      padding-left: 10px;
 }
+.Facts{
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.ipsum{
+    color: rgb(114, 114, 114);
+     font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+     text-align: left;
+}
+.AwardsWinnings{
+    margin: 0 auto;
+}
+.win{
+    border: 2px solid #ff750e;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.our{
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+.foot{
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgb(255, 244, 231);
+    padding: 30px;
+}
+.have{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.pera{
+    gap: 30px;
+}
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .G3 {
@@ -222,7 +279,11 @@ button:hover {
         height: auto;
     }
     .menu-toggle {
-        display: none;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
     }
     .features {
         margin-top: 7px;
@@ -234,11 +295,24 @@ button:hover {
     .girl-img{
         width: 100%;
     }
+    .nav-items {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .nav-active {
+        display: flex; /* Show menu when the toggle is clicked */
+    }
+    .item {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 576px) {
     .G3 {
         font-size: 1.5rem;
+        margin-left: -120px;
     }
     .new {
         font-size: 2rem;
@@ -253,8 +327,10 @@ button:hover {
         border: none;
         font-size: 2rem;
         cursor: pointer;
+        color: black;
     }
     .nav-items {
+        display: none;
         flex-direction: column;
         padding: 10px 0;
     }
@@ -290,9 +366,34 @@ button:hover {
     .lorem{
         margin-left: 20px;
     }
+    .AwardsWinnings{
+        display: block;
+        margin-left: 0px;
+        padding-right: 48px;
+    }
+    .Facts{
+        text-align: center;
+    }
+    .ipsum{
+        text-align: center;
+    }
+    .pera{
+        display: block;
+        margin-left: 80px;
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .kool{
+       margin-top: 30px;
+    }
+    .nav-active {
+        display: flex;
+    }
+    .xoxo{
+        display: flex;
+        
+    }
 }
 
-/* Show the menu when toggle is clicked */
-.nav-active{
-    display: flex ;
-}
+
+
